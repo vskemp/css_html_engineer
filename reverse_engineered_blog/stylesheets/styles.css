@@ -1,22 +1,27 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+    height: 60px;
+    background-color: #333;
+    margin-bottom: 12px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 html{
     /* background-image: url(../images/adventure-alpine-altitude-austria-355241\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover; */
-}
-
-
-
-*{
-    /*color: red;
-    /* color: rgb(0, 0, 0); 
-    alpha channel controls how opaque the color is*/
-    /* color: rgba(0, 0, 0, 0.4); */
-    /*background: red;
-    /*background: #ffffff*/
+    font-family: 'Lato', sans-serif;
 
 }
 
-p{
+p {
     color: #5d5d5d;
 }
 
@@ -25,13 +30,13 @@ table {
     border-spacing: 0;
 }
 
-th{
+th {
     background-color: #4285f4;
     color: #fff;
 }
 
 th, td {
-    
+    padding: 8px;
 }
 .column-1 {
     text-align: left;
@@ -43,15 +48,52 @@ th, td {
 /* tr:hover{
     background-color: #f9f9f9;
 } */
-
 /* this is the descendant selecto. It refers to an element anywhere inside another element*/  
 /* tr:hover td { */
     /* color: white;
     /* font-size: 28px; */
-    /*font-size: 2.2em; multiply by current font size */
-/* } */
+    /*font-size: 2.2em; multiply by current font size
+
 
 /* to apply styles to more than one selector, list the selectors out seperated by commas*/
+
 .odd-row, tr:hover {
     background-color: #f9f9f9;
+}
+
+.sidebar-heading {
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul a:link,
+ul a:visited {
+    text-transform: uppercase;
+    color: #57ad68;
+    text-decoration: none;
+}
+
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+li {
+    padding: 8px 0;
+    display: block;
+}
+
+.main-content {
+    width: 66%;
+    outline: 1px solid orange;
+}
+
+.sidebar {
+    outline: 1px solid red;
+    width: 30%;
+    max-width: 190px;
 }
